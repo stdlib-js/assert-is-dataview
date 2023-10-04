@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@esm/index.mjs';
+import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@v0.1.1-esm/index.mjs';
 ```
 
 #### isDataView( value )
@@ -87,7 +87,7 @@ import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@esm/
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@esm/index.mjs';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
 import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@esm/index.mjs';
-import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@esm/index.mjs';
+import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@v0.1.1-esm/index.mjs';
 
 var bool = isDataView( new DataView( new ArrayBuffer( 10 ) ) );
 // returns true
