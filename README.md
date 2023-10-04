@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-dataview/tags). For example,
+
+```javascript
 import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@v0.1.1-deno/mod.js';
 ```
 
@@ -82,7 +87,7 @@ import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno
 import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
 import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@deno/mod.js';
-import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@v0.1.1-deno/mod.js';
+import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@deno/mod.js';
 
 var bool = isDataView( new DataView( new ArrayBuffer( 10 ) ) );
 // returns true
