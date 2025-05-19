@@ -35,14 +35,32 @@ limitations under the License.
 
 > Test if a value is a [DataView][mdn-dataview].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-dataview
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@deno/mod.js';
+var isDataView = require( '@stdlib/assert-is-dataview' );
 ```
 
 #### isDataView( value )
@@ -50,8 +68,8 @@ import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview
 Tests if a value is a [`DataView`][mdn-dataview].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@deno/mod.js';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var DataView = require( '@stdlib/array-dataview' );
 
 var bool = isDataView( new DataView( new ArrayBuffer( 10 ) ) );
 // returns true
@@ -71,18 +89,18 @@ bool = isDataView( [] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
-import Int16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int16@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
-import Uint8ClampedArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8c@deno/mod.js';
-import Uint16Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint16@deno/mod.js';
-import Uint32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint32@deno/mod.js';
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import DataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dataview@deno/mod.js';
-import isDataView from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-dataview@deno/mod.js';
+var Float32Array = require( '@stdlib/array-float32' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Int8Array = require( '@stdlib/array-int8' );
+var Int16Array = require( '@stdlib/array-int16' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Uint8ClampedArray = require( '@stdlib/array-uint8c' );
+var Uint16Array = require( '@stdlib/array-uint16' );
+var Uint32Array = require( '@stdlib/array-uint32' );
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var DataView = require( '@stdlib/array-dataview' );
+var isDataView = require( '@stdlib/assert-is-dataview' );
 
 var bool = isDataView( new DataView( new ArrayBuffer( 10 ) ) );
 // returns true
@@ -155,7 +173,7 @@ bool = isDataView( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -222,9 +240,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-arraybuffer]: https://github.com/stdlib-js/assert-is-arraybuffer/tree/deno
+[@stdlib/assert/is-arraybuffer]: https://github.com/stdlib-js/assert-is-arraybuffer
 
-[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array/tree/deno
+[@stdlib/assert/is-typed-array]: https://github.com/stdlib-js/assert-is-typed-array
 
 <!-- </related-links> -->
 
